@@ -1,0 +1,7 @@
+One 6th day of #100 days of code challenge Today I,ve learned about -
+claendar class-
+It is an abstract class , that provides methods to convert between intance time  and DAy , months , year.
+Abstract void add(int field, int amount)- It is used to add or subtract the specified amount of time to the given calendar field, based on the calendar’s rules.
+Date getTime()	It is used to return a Date object representing this Calendar’s time value.
+Type casting -
+Int to String 
