@@ -1,0 +1,29 @@
+//Today i started studying Adnvanced operating System .
+As my mid sems are coming so in fundamental part i'll be posting my daily studies of subjects //
+
+
+
+
+OS is a program which acts as an interface between the user and the computer and provides an environment in which a user can execute programs.
+OS provides convenience for the user. And secondary goal is efficient operation of the computer system.
+buffering act as. Temporary data storer. This is a main memory. Use to store and hold the data temporarily that is being transmitted either between two devices or between a device or an application.
+Spooling is a large buffer from hard disk. Spooling can process data at remote sites. Spooling keeps both CPU and input output device to work at much higher rates.
+types of os . There are multi programmed batch  operating system or multi programming operating system.
+ // Multiprogramming oprating syatem
+for basics. multi programs resides in memory. 
+Multi Programming is a technique for running several programs at a time using time sharing. 
+CPU is never idle in multi programming operating system.
+in multiprogramming operating system. CPU can execute only one program. But can solve input output operation needs of others at the same time.
+
+
+// Multitasking 
+multitasking is a logical extension of multi programming. 
+Here the switching between jobs occur so frequently that the user can interact with each program while it is running. 
+provide direct communication between user and system. 
+Job is swept in and out of memory to the disk. Example. Communication satellite and bank.
+
+
+
+//multithreading. This ability of OS to execute different parts of the same program simultaneously.
+multithreading extends the concept of multitasking into applications. It divides specific operations within a single application into individual threads.
+multithreading. This allow very fast communication among threads. Threads are also easier to create. Then process since they don't require a separate address space.
