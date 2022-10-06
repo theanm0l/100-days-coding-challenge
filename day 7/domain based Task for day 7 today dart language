@@ -1,0 +1,70 @@
+//class constructor and named argumentss
+
+
+
+class Person {
+  String? name  ;
+  int? age  ;
+ { //this is a constructor . and {{String inputName='anmol', int inputAge=30} } this is named argument  
+    name=inputName;
+  this.age=inputAge; this keyword refers class itself , //this refers class level variable.
+  }
+  }
+}
+double addNumber(double num1 , double num2)
+{
+  return (num1 +num2);
+}
+void main(){
+  var p1 = Person(inputName: 'Max');
+  var p2= Person (inputName: 'anmol',inputAge: 22);
+  print (p1.name);
+  print(p2.name);
+  double firstResult;
+  firstResult = addNumber(1,1);
+  print(firstResult +1);
+  print('hello');
+  
+  
+}
+
+
+
+
+
+
+dart automatically understand constructor block , u can also use like this  
+u dont really dont need to write these line just just use this keyword , and named argument .
+{ 
+    name=inputName;
+  this.age=inputAge; this keyword refers class itself , //this refers class level variable.
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+class Person {
+  String? name  ;
+  int? age  ;
+  Person({this.name , int this.age=30}) // just writing like this will work 
+}
+double addNumber(double num1 , double num2)
+{
+  return (num1 +num2);
+}
+void main(){
+  var p1 = Person(name: 'Max');
+  var p2= Person (inputName: 'anmol',inputAge: 22);
+  print (p1.name);
+  print(p2.name);
+  double firstResult;
+  firstResult = addNumber(1,1);
+  print(firstResult +1);
+  print('hello');
+  
+  
+}
