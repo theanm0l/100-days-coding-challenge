@@ -1,0 +1,46 @@
+There are different packages in in flutter to help us better design and add features in our application .
+----------------------------------------------------------------------------------------------
+QLite plugin for Flutter. Supports iOS, Android and MacOS.
+Support transactions and batches
+Automatic version managment during open
+Helpers for insert/query/update/delete queries
+DB operation executed in a background thread on iOS and Android
+Usage example 
+Import sqflite.dart
+
+import 'package:sqflite/sqflite.dart';
+-----------------------------------------------------------------------------------------------
+just_audio 
+just_audio is a feature-rich audio player for Android, iOS, macOS, web, Linux and Windows.
+Quick synopsis #
+import 'package:just_audio/just_audio.dart';
+
+final player = AudioPlayer();                   // Create a player
+final duration = await player.setUrl(           // Load a URL
+    'https://foo.com/bar.mp3');                 // Schemes: (https: | file: | asset: )
+player.play();                                  // Play without waiting for completion
+await player.play();                            // Play while waiting for completion
+await player.pause();                           // Pause but remain ready to play
+await player.seek(Duration(second: 10));        // Jump to the 10 second position
+await player.setSpeed(2.0);                     // Twice as fast
+await player.setVolume(0.5);                    // Half as loud
+await player.stop();                            // Stop and free resources
+--------------------------------------------------------------------------------------------------
+device_info_plus: ^5.0.5
+Get current device information from within the Flutter application.
+Platform Support 
+Android	iOS	MacOS	Web	Linux	Windows.
+Import package:device_info_plus/device_info_plus.dart, instantiate DeviceInfoPlugin 
+and use the Android and iOS, Web getters to get platform-specific device information.
+import 'package:device_info_plus/device_info_plus.dart';
+
+DeviceInfoPlugin deviceInfo = DeviceInfoPlugin();
+AndroidDeviceInfo androidInfo = await deviceInfo.androidInfo;
+print('Running on ${androidInfo.model}');  // e.g. "Moto G (4)"
+
+IosDeviceInfo iosInfo = await deviceInfo.iosInfo;
+print('Running on ${iosInfo.utsname.machine}');  // e.g. "iPod7,1"
+
+WebBrowserInfo webBrowserInfo = await deviceInfo.webBrowserInfo;
+print('Running on ${webBrowserInfo.userAgent}');  // e.g.
+"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0"
